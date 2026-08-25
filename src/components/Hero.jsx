@@ -22,7 +22,7 @@ function DossierPanel() {
         </span>
       </div>
 
-      <MetadataRow label="Field" value="Artificial Intelligence" />
+      <MetadataRow label="Field" value={profile.field} />
       <MetadataRow label="Current System" value={archiveProjects[0].title} />
       <MetadataRow
         label="Active Systems"
@@ -54,7 +54,7 @@ export default function Hero() {
               <span className="text-ink-line">•</span>
               <span>{profile.location}</span>
               <span className="text-ink-line">•</span>
-              <span>Field: Artificial Intelligence</span>
+              <span>Field: {profile.field}</span>
               <span className="text-ink-line">•</span>
               <span className="text-signal">Status: {profile.status}</span>
             </motion.div>

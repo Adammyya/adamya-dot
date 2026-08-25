@@ -7,6 +7,7 @@ export const profile = {
   name: "Adamya Pandey",
   initials: "AP",
   fileNo: "AP-2026",
+  field: "Machine Learning, AI & Research",
 
   role: "AI / Intelligent Systems Engineer",
   roleTags: ["AI Systems", "Backend Engineering", "Research"],
