@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiCopy, FiCheck } from "react-icons/fi";
 import Section from "./ui/Section";
 import GlassCard from "./ui/GlassCard";
@@ -21,7 +20,7 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="Contact"
+      eyebrow="06 / Contact"
       title="Let's talk."
       subtitle="Open to internships, research collaborations, and good hackathon teams."
     >

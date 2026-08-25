@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FiAward, FiFileText, FiCpu, FiFlag } from "react-icons/fi";
 import Section from "./ui/Section";
 import GlassCard from "./ui/GlassCard";

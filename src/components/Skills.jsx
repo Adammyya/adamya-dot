@@ -34,8 +34,8 @@ export default function Skills() {
   return (
     <Section
       id="skills"
-      eyebrow="Skills"
-      title="Two tracks, one engineer."
+      eyebrow="03 / Technical Inventory"
+      title="Technical Inventory."
       subtitle="Systems & backend work in cyan, AI & ML work in violet — the colors below aren't decoration, they tell you which world each skill belongs to."
     >
       <div className="grid items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">

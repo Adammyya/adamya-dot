@@ -35,9 +35,9 @@ const edges = [
 ];
 
 const nodes = [
-  ...layer1.map((n) => ({ ...n, color: "#56E8C9", r: 5 })),
-  ...layer2.map((n, i) => ({ ...n, color: i % 2 === 0 ? "#9B87F5" : "#56E8C9", r: 4.5 })),
-  ...layer3.map((n) => ({ ...n, color: "#9B87F5", r: 6 })),
+  ...layer1.map((n) => ({ ...n, color: "#2F5233", r: 5 })),
+  ...layer2.map((n, i) => ({ ...n, color: i % 2 === 0 ? "#8C3B2E" : "#2F5233", r: 4.5 })),
+  ...layer3.map((n) => ({ ...n, color: "#8C3B2E", r: 6 })),
 ];
 
 export default function NodeGraph({ className = "" }) {
@@ -66,8 +66,8 @@ export default function NodeGraph({ className = "" }) {
       </g>
       <defs>
         <linearGradient id="edgeGradient" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#56E8C9" stopOpacity="0.7" />
-          <stop offset="100%" stopColor="#9B87F5" stopOpacity="0.7" />
+          <stop offset="0%" stopColor="#2F5233" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#8C3B2E" stopOpacity="0.5" />
         </linearGradient>
       </defs>
       {nodes.map((n, i) => (

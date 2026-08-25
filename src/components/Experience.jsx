@@ -5,7 +5,7 @@ import { experience } from "../data/portfolioData";
 
 export default function Experience() {
   return (
-    <Section id="experience" eyebrow="Experience" title="Where I've worked.">
+    <Section id="experience" eyebrow="04 / Experience" title="Where I've worked.">
       <div className="relative space-y-8 border-l border-ink-line pl-8">
         {experience.map((job, i) => (
           <motion.div

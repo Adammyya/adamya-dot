@@ -29,8 +29,8 @@ export default function GithubStats() {
   return (
     <Section
       id="github"
-      eyebrow="GitHub"
-      title="Live from GitHub."
+      eyebrow="05 / Development Record"
+      title="Development Record."
       subtitle="Pulled directly from the public GitHub API — no manual updating required."
     >
       <GlassCard className="p-6 sm:p-8">
@@ -40,7 +40,7 @@ export default function GithubStats() {
 
         {status === "error" && (
           <p className="text-sm text-paper-dim">
-            Couldn't reach the GitHub API right now (likely a rate limit). View the profile
+            Couldn&apos;t reach the GitHub API right now (likely a rate limit). View the profile
             directly:{" "}
             <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-signal underline">
               {profile.github.replace("https://", "")}

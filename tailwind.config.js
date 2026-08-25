@@ -4,43 +4,47 @@ export default {
   theme: {
     extend: {
       colors: {
+        // "ink" now means warm parchment/paper (the base), not black —
+        // named to keep existing component classes (bg-ink-950 etc) working
+        // while delivering the archival-paper palette the brief calls for.
         ink: {
-          950: "#07080A",
-          900: "#0D0F12",
-          800: "#13161B",
-          700: "#1A1E25",
-          line: "#FFFFFF14",
-          linestrong: "#FFFFFF26",
+          950: "#F3EEE1", // warm ivory / parchment background
+          900: "#EDE6D6",
+          800: "#E4DBC8",
+          700: "#D8CCB4",
+          line: "#2B241A1F",
+          linestrong: "#2B241A3D",
         },
         paper: {
-          DEFAULT: "#E9EBEF",
-          dim: "#9AA0AC",
-          faint: "#5C616C",
+          DEFAULT: "#2B241A", // ink black / charcoal text
+          dim: "#5A5040",
+          faint: "#8A7E68",
         },
         signal: {
-          DEFAULT: "#56E8C9",
-          dim: "#2E8C7A",
-          glow: "#56E8C955",
+          DEFAULT: "#2F5233", // deep forest green — the one accent
+          dim: "#1E3722",
+          glow: "#2F523355",
         },
         synapse: {
-          DEFAULT: "#9B87F5",
-          dim: "#5E54A0",
-          glow: "#9B87F555",
+          DEFAULT: "#2F5233",
+          dim: "#1E3722",
+          glow: "#2F523355",
         },
         ember: {
-          DEFAULT: "#F2A65A",
-          dim: "#A3713A",
+          DEFAULT: "#8C3B2E", // dark burgundy — used sparingly (status/alerts only)
+          dim: "#5E2A21",
         },
       },
       fontFamily: {
-        display: ["'Space Grotesk'", "sans-serif"],
-        body: ["'Inter'", "sans-serif"],
+        display: ["'Fraunces'", "serif"],
+        body: ["'Source Serif 4'", "Georgia", "serif"],
         mono: ["'JetBrains Mono'", "monospace"],
       },
       backgroundImage: {
-        "mesh-glow":
-          "radial-gradient(60% 50% at 20% 0%, #9B87F51a 0%, transparent 60%), radial-gradient(50% 40% at 85% 10%, #56E8C914 0%, transparent 60%)",
+        "mesh-glow": "none",
         "grain": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E\")",
+        "blueprint-grid":
+          "linear-gradient(#2B241A0d 1px, transparent 1px), linear-gradient(90deg, #2B241A0d 1px, transparent 1px)",
       },
       keyframes: {
         blink: {

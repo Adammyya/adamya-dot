@@ -4,14 +4,14 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { profile } from "../data/portfolioData";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#education", label: "Education" },
-  { href: "#github", label: "GitHub" },
+  { href: "#about", label: "01 Profile" },
+  { href: "#projects", label: "02 Work" },
+  { href: "#skills", label: "03 Skills" },
+  { href: "#experience", label: "04 Experience" },
+  { href: "#education", label: "Record" },
+  { href: "#github", label: "05 Development" },
   { href: "#achievements", label: "Achievements" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "06 Contact" },
 ];
 
 export default function Navbar() {
@@ -27,8 +27,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass" : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
+        scrolled ? "border-ink-line bg-ink-950/95" : "border-transparent bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

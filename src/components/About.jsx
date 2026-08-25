@@ -5,7 +5,7 @@ import { profile } from "../data/portfolioData";
 
 export default function About() {
   return (
-    <Section id="about" eyebrow="About" title="Software first, AI by design.">
+    <Section id="about" eyebrow="01 / Profile" title="Software first, AI by design.">
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <div className="space-y-5">
           {profile.about.map((para, i) => (

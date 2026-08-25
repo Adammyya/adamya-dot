@@ -5,7 +5,7 @@ import { education } from "../data/portfolioData";
 
 export default function Education() {
   return (
-    <Section id="education" eyebrow="Education" title="Foundations." track="synapse">
+    <Section id="education" eyebrow="Record" title="Foundations." track="synapse">
       <div className="relative space-y-8 border-l border-ink-line pl-8">
         <motion.div
           initial={{ opacity: 0, x: 16 }}
